@@ -4,8 +4,10 @@ This repository contains a collection of howtos for dealing with git / github.
 
 For more information, the [git pro](https://git-scm.com/book/en/v2) book is an excellent and freely available resource. 
 
-Note: We assume that you have git installed and can run all commands on the terminal. 
-There are graphical tools for working with git(hub), but using the command line tool helps understanding what you are doing, and will also prepare you for using git on a server without graphical interface and/or another computer without graphical tools installed.  
+Preparation:
+
+* We assume that you have [git](https://github.com/git-guides/install-git) installed so that you can run commands in the terminal. There are graphical tools for working with git(hub), but using the command line tool helps understanding what you are doing, and will also prepare you for using git on a server without graphical interface and/or another computer without graphical tools installed.  
+* Register your own [GitHub](https://github.com/) account
 
 # Workshop
 
@@ -15,7 +17,8 @@ More information on the [CCS Amsterdam Git(hub) Workshop](workshop.md)
 
 Basic Git(hub) usage
 
-- Creating and cloning a repository
+- [Creating a repository](tutorials/creating_git_repository.md)
+- [Cloning a repository](tutorials/cloning_git_repository.md)
 - Pulling, adding, committing and pushing
 - Resolving conflicts: merging changes
 
