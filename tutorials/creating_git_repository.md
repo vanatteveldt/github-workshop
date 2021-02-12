@@ -17,7 +17,7 @@ for version control.
 If you have a directory on your system that contains your project files, you can 
 use the `git init` command to *initialize* the repository.
 
-This is as easy as it sound. Open your terminal, and navigate to your directory 
+This is as easy as it sounds. Open your terminal, and navigate to your directory 
 (to try this out now, you can just create an empty directory).
 If you have [Git](https://github.com/git-guides/install-git) installed, you can now enter the command.
 
@@ -36,6 +36,9 @@ yet made any `commits`. If there are files in your directory, it will mention th
 these files are currently `untracked` and that you can `add` them. We will
 cover these soon. For now just celebrate that you initialized (your first?) Git!
 
+So now you can create a Git repository! The main takeaway from this is that you have seen for
+yourself that a Git repository is just a fancy directory. The only thing that's changed is that 
+it now contains a `.git` subdirectory. 
 
 ## Creating a repository on GitHub 
 

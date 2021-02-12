@@ -73,7 +73,7 @@ Copy the URL of your fresh new repository, and execure the `git clone` command (
 forget to navigate to a directiory in which you want to put it).
 
 ```
-git clone https://github.com/vanatteveldt/[that name you choose].git
+git clone https://github.com/[your github profile]/[your repository].git
 ```
 
 Make sure that this worked (and let us know if it didn't), because you'll be using this
