@@ -17,8 +17,7 @@ More information on the [CCS Amsterdam Git(hub) Workshop](workshop.md)
 
 Basic Git(hub) usage
 
-- [Creating a repository](tutorials/creating_git_repository.md)
-- [Cloning a repository](tutorials/cloning_git_repository.md)
+- [Creating and cloning a repository](tutorials/creating_and_cloning.md)
 - Pulling, adding, committing and pushing
 - Resolving conflicts: merging changes
 
