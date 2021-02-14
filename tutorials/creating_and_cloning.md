@@ -1,14 +1,14 @@
 # What are Git and GitHub?
 
-There seem to be two levels of understanding Git.
+Roughly speaking, there are two levels of understanding Git.
 The first is to know a handful of commands that allow you to effectively use
 Git in your own projects. The second level is to actually understand the elegant 
 Git *branching* model and using it to it's full potential.
 
 In practice, even many people that use Git effectively and on a regular basis 
-hardly get beyond that first stage. And off course there is an [xkcd](https://www.xkcd.com) about that:
+hardly get beyond that first stage. And off course there is an [xkcd](https://www.xkcd.com) comic to illustrate this point:
 
-<div style="text-align:center"><img src="https://imgs.xkcd.com/comics/git.png" width="250"/></div>
+<div style="text-align:center"><img src="https://imgs.xkcd.com/comics/git.png" width="250" style="text-align:center"></div>
 
 In this workshop we first and foremost focus on the first level of understanding.
 We do address some of the more advanced features, but the primary goal is to show you
@@ -17,18 +17,19 @@ why Git is useful and how you can use it. Let's start with a simple description 
 ## Git is a version control system
 A Git repository is a directory that contains all the files in a project,
 including the complete history of revisions. 
-In that sense, you could just use Git as just a version control system.
 You can use it to restore the content of the directory to a previous version.
+In that sense, you could just use Git as a version control system.
+
 
 ## Git is a *distributed* version control system
 Git is designed to facilitate collaboration.
-Multiple users can have their own *clones* of the same Git repository, in which
-they can freely make updates. When they eventually want to share these updates,
-they need to somehow merge the different versions back together.
+Imagine several programmers working together on a project.
+To develop and test code they need to have local copies of the project,
+but this makes it very difficult (and cumbersome) to ensure that the different
+copies of the projects stay synchronized. 
+A distributed version control system such as Git makes this as painless and efficient
+as possible.
 
-You can imagine that this can lead to very complex situations. The goal of distributed
-version control systems such as Git is to make this as painless and efficient
-*as possible*.
 
 ## GitHub is a hub for Git repositories
 People sometimes mistake Git and GitHub for being the same thing.
