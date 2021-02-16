@@ -21,11 +21,9 @@ Basic Git(hub) usage
 - [Adding, committing, pushing and pulling](tutorials/add_commit_push_pull.md)
 - [Resolving conflicts: merging changes](tutorials/resolving_conflicts.md)
 
-Advanced git(hub) usage
+More advanced git(hub) usage
 
-- Commits and Rebasing
-- Tags and releases
-- Working with branches
-- Forks and pull requests
-- Bringing your fork up to date
+- [Commits, parents, and rebasing](tutorials/rebasing.md)
+- [Branches, tags, and releases](tutorials/branches.md)
+- [Forks and pull requests](tutorial/pr.md)
 - [Permanently removing sensitive files](tutorials/removing_sensitive_files.md)
