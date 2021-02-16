@@ -36,7 +36,7 @@ $ git status
 
 If you haven't yet made any changes to your directory, this should tell you that there's
 "nothing to commit, working tree clean". So now let's actually make some changes.
-Create a simple text file called `hello_world.txt` (or any name you like), using whatever
+Create a simple text file called `hello_world.txt`, using whatever
 text editor you like. Now, if you run `git status` again, you should see the following:
 
 ```
@@ -132,7 +132,7 @@ If you are working just by yourself, this is enough to keep your project going.
 But if you are working together with others **who also push changes**, it's important
 that **you also pull changes**. 
 
-Conveniently, it never really hurts to pull. Try it:
+Conveniently, you can just pull to see whether the remote repository has been updated.
 
 ```
 $ git pull
@@ -162,16 +162,3 @@ run `git pull` again it will tell you as much.
 
 
 
-# Push and pull often
-
-Pushing and pulling is important, and you would rather push and pull too much than too little. 
-This way, you can as much as possible prevent *merge conflicts*.
-The problem is simple: say you want to *push* some changes to the remote repository, but someone
-else already pushed some changed the remote repository since you last *pulled*.
-Rule of the streets is that it's now your responsibility to fix this.
-This often isn't very hard, but it can be annoying. This is where the somewhat absurd
-(but in practice quite common) solution comes from of just making a new clone from
-the latest version and then adding your changes ([remember, this one](https://xkcd.com/1597/)).
-
-We'll discuss some better solutions later on. But just remember that preventing beats
-curing, and you can prevent this by pushing and pulling often.

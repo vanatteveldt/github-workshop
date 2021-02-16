@@ -19,7 +19,7 @@ Basic Git(hub) usage
 
 - [Creating and cloning a repository](tutorials/creating_and_cloning.md)
 - [Adding, committing, pushing and pulling](tutorials/add_commit_push_pull.md)
-- Resolving conflicts: merging changes
+- [Resolving conflicts: merging changes](tutorials/resolving_conflicts.md)
 
 Advanced git(hub) usage
 
