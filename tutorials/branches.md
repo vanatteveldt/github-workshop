@@ -1,4 +1,6 @@
-# Branches, tags, and releases
+# Working with Branches
+
+(See chapter 3 of the [git pro book](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) for more details)
 
 When looking at github, you have probably encountered the name *main* in multiple places.
 This is the (default) name of the default (main) branch. 
@@ -38,8 +40,35 @@ Exercise:
 Branches are very useful in at least three circumstances:
 
 1. You are working on some changes that you are still unsure about or don't want to commit to the main line, 
-   for example because your change breaks everything so others will have trouble working with the code, or because you are rewriting a big section of a document and the text doesn't make sense until your change is done. In this case, you can create a branch 
+   for example because your change breaks everything so others will have trouble working with the code, 
+   or because you are rewriting a big section of a document and the text doesn't make sense until your change is done. 
+   In this case, you can create a branch to still be able to commit your changes, without disturbing others working on the same repository.
+2. Alone or together with others, you are working on a bigger feature or change request. If you create a branch for this, 
+   you can collaborate on the feature (by both working in the same branch) without disturbing the main line, 
+   and it is also clear that the commits used to create the feature or fix the bug all belong together. 
+3. You have a stable version of your tool that you wish to maintain, while also continuing to work on a new version.
+   You can create a separate branch for the released version (or for the development version - either works), 
+   and have separate commits to the stable and development version.
 
 ## Merging branches
+
+In each of the use cases, at some point you probably want to merge branches again. For example, if you finished your rewrite, feature, or bugfix, you want to apply the changes back to main. 
+The way to do this is to activate the repository you want to merge the changes *into*, so `git checkout main`. 
+Now, you can ask git to merge the changes from your branch by doing `git merge mybranch`.
+If there are not changes to *main* in the meantime, this will "fast forward" main to include the commits from *mybranch*, and both branches will point to the same commit. More likely, the main branch will also be changed in the meantime, and git will create a new merge commit that has both the latest commit from main and from mybranch as parent. 
+
+This is illustrated below. C1 was the last commit in the repository before the branch was created. 
+Then, C2 was created on the branch. Merging directly after committing C2 allows `git merge mybranch` to *fast forward* the main branch, since mybranch is stricly ahead of main.
+If C3 is committed on the main branch in the meantime, however, you cannot fast forward as the branches have diverges.
+Thus, `git merge mybranch` will create a new merge commit (M), and point the main branch to this new commit. 
+The mybranch branch will still point to C2, and now be strictly behind the  main branch.
+
+![Merging branches](https://i.imgur.com/PaMfjb9.png)
+
+As usual, if commits from both branches changed the same parts of files, there will be a merge conflict that you need to resolve manually, and then `git add` the resolved files and `git commit` the merge. 
+
+In any case, after merging the branches you can delete the old branch if you no longer need to work on it. 
+This can be done locally with `git branch -d mybranch`. 
+To delete the branch on github, it's easiest to go to github, click on the *N branches* icon, and use the trashcan icon to delete it. 
 
 
