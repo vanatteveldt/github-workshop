@@ -27,3 +27,10 @@ More advanced git(hub) usage
 - [Branches, tags, and releases](tutorials/branches.md)
 - [Forks and pull requests](tutorial/pr.md)
 - [Permanently removing sensitive files](tutorials/removing_sensitive_files.md)
+
+# Words of wisdom
+
+- Code should (almost) always be on github
+- Pull when you start working
+- Commit early, commit often
+- Create a branch if you have 'work in progress' that you don't want to commit yet to the main line. And then commit and push that branch (early and often).  
