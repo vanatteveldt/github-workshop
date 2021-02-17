@@ -28,6 +28,7 @@ More advanced git(hub) usage
 # Words of wisdom
 
 - Code should (almost) always be on github
+- A repository should (almost) always have a license
 - Pull when you start working
 - Commit early, commit often
 - Create a branch if you have 'work in progress' that you don't want to commit yet to the main line. And then commit and push that branch (early and often).  
