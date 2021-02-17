@@ -20,12 +20,13 @@ Basic Git(hub) usage
 - [Creating and cloning a repository](tutorials/creating_and_cloning.md)
 - [Adding, committing, pushing and pulling](tutorials/add_commit_push_pull.md)
 - [Resolving conflicts: merging changes](tutorials/resolving_conflicts.md)
+- [README, licence and .gitignore](tutorials/readme_license_gitignore.md)
 
 More advanced git(hub) usage
 
 - [Commits, parents, and rebasing](tutorials/rebasing.md)
 - [Branches, tags, and releases](tutorials/branches.md)
-- [Forks and pull requests](tutorial/pr.md)
+- [Forks and pull requests](tutorials/pr.md)
 - [Permanently removing sensitive files](tutorials/removing_sensitive_files.md)
 
 # Words of wisdom

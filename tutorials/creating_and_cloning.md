@@ -74,25 +74,23 @@ Let's actually do this from the terminal. As a reminder, on Windows you can go t
 In your terminal, first just type git and hit enter, to see if you installed it properly.
 
 ```
-$ git
+git
 ```
-
-*Note that the codeblocks in this workshop use the dollar sign to indicate that you should enter the part after the dollar sign in your terminal. So `$ git` means that you want to type `git` in your terminal. By the way, please do 'type' rather than 'copy', because this helps you remember the commands better*
 
 If this gives you an overview of important git commands, you know it's installed properly. 
 Now we can set your username and email. For this run the following two commands (don't forget
 to set your own name and email address)
 
 ```
-$ git config --global user.name "your name"
-$ git config --global user.email "you@something.com"
+git config --global user.name "your name"
+git config --global user.email "you@something.com"
 ```
 
 You can now also check whether it worked:
 
 ```
-$ git config --global user.name
-$ git config --global user.email
+git config --global user.name
+git config --global user.email
 ```
 
 

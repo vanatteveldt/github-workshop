@@ -32,7 +32,7 @@ This is easiest to just show. Open your terminal and navigate to your local repo
 Let's first run `git status` to see what's up.
 
 ```
-$ git status
+git status
 ```
 
 If you haven't yet made any changes to your directory, this should tell you that there's
@@ -42,14 +42,13 @@ We're going to create a simple text file called `hello_world.txt`, that just con
 command line (just because we can). 
 
 ```
-$ echo "hi" > hello_world.txt
+echo "hi" > hello_world.txt
 ```
 
-You can verify that this worked (`$ dir` on Windows, `$ ls` on Mac or Linux)
+You can verify that this worked (`dir` on Windows, `ls` on Mac or Linux)
 Now, if you run `git status` again, you should see something like:
 
 ```
-$ git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
@@ -66,7 +65,7 @@ nicely tells you that you can use "git add" to track the file.
 In the next step, we're going to do this, and specifically we're going to run:
 
 ```
-$ git add .
+git add .
 ```
 
 Note that we put a dot after add. After `git add` you can specify which specific files you want to add. 
@@ -80,7 +79,7 @@ Now that the stage is set, we can *commit*. For this command we'll use an additi
 to add a message to our commit.
 
 ```
-$ git commit -m "I created a file called hello_world.txt"
+git commit -m "I created a file called hello_world.txt"
 ```
 
 If you run this, you get some minor feedback on what you changed (how many files, how many insertions).
@@ -102,7 +101,7 @@ now tell you that `Your branch is ahead of 'origin/main' by x commits`. We can n
 these local commits to publish them.
 
 ```
-$ git push
+git push
 ```
 
 This will probably ask you for your username and password. There are ways to prevent this,
@@ -120,9 +119,9 @@ But although these are three separate commands, you should get by just fine if y
 think of them simply as a single mantra that you need to recite whenever you want to push your changes to GitHub.
 
 ```
-$ git add .
-$ git commit -m "short description of what changes you made"
-$ git push
+git add .
+git commit -m "short description of what changes you made"
+git push
 ```
 
 Sure, there are cases where it might be better to make several commits,
@@ -140,7 +139,7 @@ that **you also pull changes**.
 Conveniently, you can just pull to see whether the remote repository has been updated.
 
 ```
-$ git pull
+git pull
 ```
 
 This should tell you that you're `Already up to date`. Makes sense, since you're 
@@ -157,7 +156,7 @@ Specifically, your `local repository` is now *behind* by 1 commit.
 Now let's run pull again.
 
 ```
-$ git pull
+git pull
 ```
 
 This should now show you that it downloaded the changes, and should provide a brief

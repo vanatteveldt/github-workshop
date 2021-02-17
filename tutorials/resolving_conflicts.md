@@ -26,7 +26,7 @@ these changes, someone else beat you to the push. In storyboard:
 * GitHub: **no >:(**
 
 Git will now tell you: `failed to push some refs to [respository]`, and tips that
-`Updates were rejected because the remote contains work that you do not have locally. This is usually caused by another repository pushing to the same ref.`
+`Updates were rejected because the remote contains work that you do not have locally.`
 
 Sound's fun, so let's orchestrate it. Remember that in the previous tutorial we manually
 committed a change on GitHub? This time we're doing the same thing, but instead of pulling,
@@ -171,7 +171,7 @@ $ git push
 Check on GitHub to verify if it worked. The conflict.txt file should now say "marco polo!!"
 
 
-## A super simple solution
+## A super simple but super inelegant solution
 
 There is another... solution. Remember that [xkcd comic](https://xkcd.com/1597/) we began the workshop with?
 It actually refers to these types of situations.
@@ -184,6 +184,9 @@ That solution is:
 * Delete the repository, and make a fresh clone
 * Now just redo/copy whatever changes you made in the fresh clone
 
-Of course, this isn't really a good option if you made many changes. Maybe the conflict is 
+Off course, this isn't really a good option if you made many changes. Maybe the conflict is 
 just one line somewhere, in which case the rebase dance is a much better solution. But if you're really
-stuck, this can be a last resort fix.
+stuck, this can be a last resort hack.
+
+
+
