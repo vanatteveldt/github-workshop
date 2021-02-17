@@ -21,7 +21,7 @@ Basic Git(hub) usage
 More advanced git(hub) usage
 
 - [Commits, parents, and rebasing](tutorials/rebasing.md)
-- [Branches, tags, and releases](tutorials/branches.md)
+- [Working with branches](tutorials/branches.md)
 - [Forks and pull requests](tutorials/pr.md)
 - [Permanently removing sensitive files](tutorials/removing_sensitive_files.md)
 
