@@ -56,6 +56,59 @@ The repositories of the different users on their own local systems are called `l
 Each local repository is directly connected to the remote repository, so if everyone manages to stay in sync with the remote repository, everyone stays in sync.
 One of the most important topics of this workshop is how to manage this.
 
+
+# Setting up Git and GitHub
+
+For this workshop you should have [git](https://github.com/git-guides/install-git) installed, and registered a [GitHub](https://github.com/) account. If you haven't done this already, please do it now.
+
+## Username and email addres
+
+Now, there are some basic settings that you need to look into. 
+Most importantly, you need to specify your git email address and name (depending
+on how you installed git, this might already have been asked).
+What's important here is that your email address is **the same address you that you
+use on GitHub**. 
+
+Let's actually do this from the terminal. As a reminder, on Windows you can go to start (or press the windows key) and type cmd to find the command prompt. On Mac, you can press command + spacebar (or apple-key + spacebar) and type terminal. On Ubuntu and some other Linux distributions it's `ctrl+alt+t`.
+
+In your terminal, first just type git and hit enter, to see if you installed it properly.
+
+```
+$ git
+```
+
+This should give you an overview of important git commands. Now let's see if git knows your
+user name and email address. For this run the following two commands.
+
+```
+$ git config --global user.name
+$ git config --global user.email
+```
+
+If these give empty results, you still need to specify them. You do so by running the same
+command, but adding your name and email address (between quotes).
+
+```
+$ git config --global user.name "your name"
+$ git config --global user.email "you@something.com"
+```
+
+
+## Setting up GitHub authentication
+
+When at some point (in about 15 minutes) you're pushing your first commits to 
+GitHub, you'll naturally be required to authenticate. It used to be the case
+that you can just give your username and password, but [the times they are a changing](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/#what-you-need-to-do-today).
+For you now you can still do this (the dates mentioned in the link have been postponed), but you might get a warning that this is 'deprecated',
+and will no longer be possible from August 13, 2021. For more details 
+
+If you're completely new to Git, you might want to ignore this issue for now and continue
+with the workshop. But at some point you will have to deal with it, and then there
+are two options.
+
+* The seemingly easiest option is to get a [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). You can then just use this token instead of your password (i.e. literally, give this token when they ask for you password). Chances are good that you only need to do this once (or every once in a while) if your systems uses a password manager.
+* The better solution is to use SSH authentication. You set this up once for every computer that you use, and you're good to go. GitHub provides clear instructions for [Windows, Mac and Linux](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key). One thing to remember though, is that with SSH authentication cloning a repository (as shown below) works slightly differently. Instead of `git clone https://github.com/user/repository`, it becomes `git clone git@github.com:user/repository`.
+
 # Creating a repository
 
 To work on an existing project, you *clone* it from GitHub. 
@@ -123,3 +176,6 @@ git clone https://github.com/[your github profile]/[your repository].git
 Make sure that this worked (and let us know if it didn't), because you'll be using this
 repository for the next part of the tutorial, where you will update your local repository
 and push the changes to the remote repository.
+
+
+## 
