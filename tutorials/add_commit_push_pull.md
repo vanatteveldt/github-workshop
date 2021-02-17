@@ -9,8 +9,9 @@ making changing in the `local repository`, and for interacting with the
 * `git add`: add changes to the *staging area*
 * `git commit`: save the *staged* changes in the `local repository`
 * `git push`: push the committed changes to the `remote repository`
-* `git pull`: if changes have been committed to the `remote repository`, pull them to the `local repository`.
+* `git pull`: if changes have been committed to the `remote repository`, pull them to the `local repository`, and update your local files.
 
+![Pushing and Pulling](https://i.imgur.com/qeagQD6.png)
 
 ## Making changes in your local repository 
 
@@ -160,5 +161,8 @@ summary of which files specifically have changed, and how much.
 Most importantly, your `local repository` is now again up to date, and if you
 run `git pull` again it will tell you as much. 
 
+## Good Workflow Habits
 
++ **Pull before you start working**. If you make changes, you want them to be based on the most recent version of the project. So, always `git pull` before you start working on something (and generally do a quick `git status` even before that so you can see if you accidentally forgot to commit something)
++ **Commit early, commit often**. Having lots of relatively small commits is better than one big commit after a day (or more) of work. Ideally, whenever you make a standalone change (fix some issue, rewrite or reorder some paragraph(s)), commit it with a message stating why you made those changes. This allows others (and your future you) to understand why you did certain things. If you wait a long time between commits you often don't really remember why you did something, and there is a bigger chance that someone else changed something in the meantime. So, commit and push your changes as often as possible (and we will later learn about [branches](branches.md) that allow you to commit changes without interfering with other users)
 
