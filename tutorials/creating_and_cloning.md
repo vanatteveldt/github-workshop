@@ -17,7 +17,7 @@ why Git is useful and how you can use it. Let's start with a simple description 
 ## Git is a version control system
 Git is a system for managing repositories.
 A Git repository is a directory that contains all the files in a project,
-including the complete history of revisions. 
+including the complete history of revisions (called *commits*). 
 This allows you to restore the content of the directory to a previous version.
 
 Now, version control is nice, but that's probably not the reason you joined
@@ -25,8 +25,13 @@ this workshop. Stuff like Dropbox also has some nice version control, and doesn'
 require a workshop. However, if you ever used this type of software for real-time
 collaboration, you get why it wouldn't really work with programming tasks. Perhaps
 you've even lived the hell of conflicted copies, or lost a directory that someone
-accidentally deleted. What you'd really want is something like a version control
+accidentally deleted. 
+
+What you'd really want is something like a version control
 system designed for this type of collaboration. 
+The big difference between Git and something like Dropbox is that git version control is *explicit*:
+as a user, you explicitly create and name a new version (a *commit*), and you control the process of merging with other people's changes.
+That is a bit more work than the 'magic' versioning of Dropbox, but it means that you never accidentally overwrite changes or create conflicting versions. 
 
 ## Git is a *distributed* version control system
 Git is designed to facilitate collaboration.
