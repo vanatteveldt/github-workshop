@@ -71,4 +71,44 @@ In any case, after merging the branches you can delete the old branch if you no 
 This can be done locally with `git branch -d mybranch`. 
 To delete the branch on github, it's easiest to go to github, click on the *N branches* icon, and use the trashcan icon to delete it. 
 
+## Pull requests
 
+When you have a branch on github, you can automatically create a *pull request* for the branch. 
+A pull request is essentially a request to have the branch merged. 
+This is quite a nice feature by itself as it allows you to automatically merge the branch without having to use the commands above.
+There is even a built-in editor to resolve and merge conflicts. Kids these days really do have  it easy...
+
+However, this feature really shines when you want to discuss whether the changes are a good idea.
+For example, maybe you are the second author or otherwise not in charge of a project,
+and your branch represents a significant rewrite or change.
+In that case, you can create a 'pull request', that can be seen as a polite question to the other collaborator or first author
+whether they agree with your changes. 
+They can easily review the changes, merge them if required, and otherwise reject the request. 
+
+In a pull request, you will also see if it can be merged without conflicts. 
+In the 'second author' scenario, you probably want to present changes that can be merged easily.
+Thus, if there are any conflicting changes in the main branch, you want to resolve them in your branch before discussing the pull request.
+To do this, `git checkout main` to activate the main branch and `git pull` any changes. Now, switch back to your branch (`git checkout mybranch`),
+and do `git merge main` to merge all commits in main into this branch. 
+This will prompt you to resolve any conflicts, and create a new merge commit in your branch that has both your last commits and the last commit from main as a parent.
+If you then `git push`, the new commit  is automatically added to the pull request (since a PR references the branch, not the commit),
+and the request should now merge without problems. 
+
+
+## Exercise
+
+Suppose you are making a big change, and you want to make this change in a separate branch:
+
+1. Create a new branch 'mybranch' locally, make a change, commit it, make another change, and commit that as well.
+2. Run `git log`. Where do `HEAD`, `mybranch`, `master`, and `origin/master` point to? Is there an `origin/mybranch`? 
+3. Push your new branch with `--set-upstream`. Check `git log` again. What changed? Why?
+4. Go to github and look around in your new branch. 
+5. On github, in the main branch, edit a separate file. 
+6. On your computer, do `git pull`. Nothing will change, because your branch has not changed on github.
+7. Checkout the main branch and `git pull`. The change on github is now pulled to your local *main* branch. 
+8. Merge your branch with `git merge mybranch`. Check the `git log`. Does it all make sense?
+9. Push your change and check the github network (in insights). Does this make sense?
+
+Now, repeat the above exercise, but in step 5 change the same file that you edit in the branch, and fix the resulting merge conflict.
+
+Finally, repeat this exercise, but using a pull request to merge the change after step 5. 
