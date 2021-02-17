@@ -58,37 +58,11 @@ One of the most important topics of this workshop is how to manage this.
 
 # Creating a repository
 
-There are two main ways of creating a Git repository.
+To work on an existing project, you *clone* it from GitHub. 
+Similarly, the easiest way to create a new git repository is to create it on the GitHub webiste, and then clone it to your local  computer.
 
-* `git init`: Create (initialize) a new local repository
-* `git clone`: Create a local repository by cloning a remote repository
-
-
-## git init: creating a local repository
-
-A Git repository is essentially just a directory with bells and whistles. 
-If you have a directory on your system that contains your project files, you can 
-use the `git init` command to *initialize* the repository.
-
-This is as easy as it sounds. Open your terminal, and navigate to your project directory 
-(to try this out now, you can just create an empty directory).
-If you have [Git](https://github.com/git-guides/install-git) installed, you can now enter the command.
-
-```
-$ git init
-```
-
-To verify that it worked, you could check the status of the repo.
-
-```
-$ git status
-```
-
-This will tell you that you are currently on the `master` branch, and haven't
-yet made any `commits`. If there are files in your directory, it will mention that
-these files are currently `untracked` and that you can `add` them. We will
-cover these commands soon. For now just celebrate that you initialized (your first?) Git!
-
+Note that you can also create a git repository locally (with `git init`) and later add it to GitHub (or even work without GitHub altogether),
+but it's easier to just start working from GitHub rightaway.   
 
 ## git clone: creating a local clone of a remote repository
 
@@ -127,19 +101,6 @@ Still, you are allowed to make changes, and you can ask the maintainers of the
 repository whether they want to adopt your changes. So without being an official collaborator
 you can still be a nice person who helps. But more on that later when we get to `pull requests`.
 
-
-# Creating a new repository on GitHub
-
-When we create a new Git repository with `git init`, it is not automatically hosted
-on GitHub. 
-To do this, we would first need to create an empty GitHub repository, set this repository
-as the remote repository for our local repository, and push the repository to GitHub. 
-This isn't particularly difficult (see steps [here](https://docs.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line)), but it is a bit involved. 
-
-There is a somewhat easier alternative that only requires the `git clone` command.
-We can just make the remote repository on GitHub, clone it, and then add the project files.
-As a nice convenience, GitHub also let's you add a `README` file, and offers templates for a `licence` and `.gitignore` settings (more on these later).
-We'll use this approach now to create your own GitHub repository to use throughout this workshop.
 
 ## Creating your repository via Github
 
