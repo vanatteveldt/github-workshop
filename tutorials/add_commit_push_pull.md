@@ -166,3 +166,14 @@ run `git pull` again it will tell you as much.
 + **Pull before you start working**. If you make changes, you want them to be based on the most recent version of the project. So, always `git pull` before you start working on something (and generally do a quick `git status` even before that so you can see if you accidentally forgot to commit something)
 + **Commit early, commit often**. Having lots of relatively small commits is better than one big commit after a day (or more) of work. Ideally, whenever you make a standalone change (fix some issue, rewrite or reorder some paragraph(s)), commit it with a message stating why you made those changes. This allows others (and your future you) to understand why you did certain things. If you wait a long time between commits you often don't really remember why you did something, and there is a bigger chance that someone else changed something in the meantime. So, commit and push your changes as often as possible (and we will later learn about [branches](branches.md) that allow you to commit changes without interfering with other users)
 
+## Exercises
+
+1. Make sure you have a GitHub repository for testing and you cloned it on your local computer.
+2. Edit the README.md file on your computer
+3. Check `git status`. Do you understand the output?
+4. Stage your change using `git add README.md`, and check `git status`. Do you understand the output?
+5. Commit your change using `git commit -m "Edited the readme"`,  and check `git status`. Do you understand the output?
+6. Push your change using `git push`,  and check `git status`. Do you understand the output?
+7. On Github, refresh and see that your change is now visible. Within GitHub, edit the file and make another change.
+8. On your local computer, check `git status`. Can you see the change from GitHub? Why not?
+9. Update your local repository with `git pull`. Do you understand the output?
