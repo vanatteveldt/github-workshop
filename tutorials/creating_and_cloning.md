@@ -66,7 +66,7 @@ For this workshop you should have [git](https://github.com/git-guides/install-gi
 Now, there are some basic settings that you need to look into. 
 Most importantly, you need to specify your git email address and name (depending
 on how you installed git, this might already have been asked).
-What's important here is that your email address is **the same address you that you
+What's important here is that your email address is **the same address that you
 use on GitHub**. 
 
 Let's actually do this from the terminal. As a reminder, on Windows you can go to start (or press the windows key) and type cmd to find the command prompt. On Mac, you can press command + spacebar (or apple-key + spacebar) and type terminal. On Ubuntu and some other Linux distributions it's `ctrl+alt+t`.
@@ -77,20 +77,20 @@ In your terminal, first just type git and hit enter, to see if you installed it 
 $ git
 ```
 
-This should give you an overview of important git commands. Now let's see if git knows your
-user name and email address. For this run the following two commands.
-
-```
-$ git config --global user.name
-$ git config --global user.email
-```
-
-If these give empty results, you still need to specify them. You do so by running the same
-command, but adding your name and email address (between quotes).
+If this gives you an overview of important git commands, you know it's installed properly. 
+Now we can set your username and email. For this run the following two commands (don't forget
+to set your own name and email address)
 
 ```
 $ git config --global user.name "your name"
 $ git config --global user.email "you@something.com"
+```
+
+You can now also check whether it worked:
+
+```
+$ git config --global user.name
+$ git config --global user.email
 ```
 
 
