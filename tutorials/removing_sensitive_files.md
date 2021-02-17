@@ -1,9 +1,12 @@
 # Fixing mistakes 2: Removing sensitive files
 
 We all know the problem: you accidentally commit a file you really shouldn't have added to github. 
-For example, it can contain a password or private key, or can contain private or copyrighted data you are not allowed to share.
-Of course, you can `git rm` the file, and it will not appear on the default github site anymore, 
-but it will still be there in the commit history.  So, how to completely erase a file from a git(hub) repository?
+Of course, you can `git rm` the file to remove and it will be removed from the active version of the repository.
+More generally, you can use `git revert HEAD~1` to undo the last commit (`HEAD~1`), which automatically creates a new commit that undos the previous commit. 
+
+However, removing the file through normal means does not suffice for a file containing e.g. a password or private key or private or copyrighted data you are not allowed to share, as the file(s) can still be found in the commit history. 
+
+So, how to completely erase a file from a git(hub) repository?
 
 # Scenario 1: You added and/or committed the file, but did not push yet
 
