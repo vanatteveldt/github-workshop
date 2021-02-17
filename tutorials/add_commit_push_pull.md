@@ -37,8 +37,16 @@ $ git status
 
 If you haven't yet made any changes to your directory, this should tell you that there's
 "nothing to commit, working tree clean". So now let's actually make some changes.
-Create a simple text file called `hello_world.txt`, using whatever
-text editor you like. Now, if you run `git status` again, you should see the following:
+We're going to create a simple text file called `hello_world.txt`, that just contains the text
+"hi". It doesn't matter how you create this file, but for this example we'll do this from the
+command line (just because we can). 
+
+```
+$ echo "hi" > hello_world.txt
+```
+
+You can verify that this worked (`$ dir` on Windows, `$ ls` on Mac or Linux)
+Now, if you run `git status` again, you should see something like:
 
 ```
 $ git status
@@ -61,7 +69,10 @@ In the next step, we're going to do this, and specifically we're going to run:
 $ git add .
 ```
 
-The dot here means: add everything. So all the untracked changes have now been
+Note that we put a dot after add. After `git add` you can specify which specific files you want to add. 
+The dot here is convenient shorthand for saying `add everything`. 
+
+So all the untracked changes have now been
 *added* to the *staging area*. If you run `git status` again, it should now tell you so,
 and color the changed files in a comforting green color. 
 
@@ -79,13 +90,6 @@ describe what changes you made. It's important to make clear descriptions (but i
 don't, and yes, off course there is an [xkcd](https://xkcd.com/1296/) about that).
 
 And that's it! Now we're ready to push our changes to the `remote repository`.
-As a closing note on `add` and `commit`, you should be able to get by just fine
-by only remember the following two lines, and always running add and commit in tandem.
-
-```
-$ git add .
-$ git commit -m "short description of what changes you made"
-```
 
 ## Pushing changes from local to remote
 
@@ -111,9 +115,9 @@ Also, if you again run `git status`, you should see that you're now back to a cl
 
 ## The add, commit and push mantra
 
-We've spent quite some time discussing `add`, `commit` and `push`, but here as
-well you should be able to get by just fine if you only remember them as a single
-mantra that you need to recite whenever you want to push your changes to GitHub.
+We've spent quite some time discussing `add`, `commit` and `push`.
+But although these are three separate commands, you should get by just fine if you
+think of them simply as a single mantra that you need to recite whenever you want to push your changes to GitHub.
 
 ```
 $ git add .
@@ -122,8 +126,8 @@ $ git push
 ```
 
 Sure, there are cases where it might be better to make several commits,
-and then pushing everything in one go, but for smaller projects, and certainly
-for individual projects, it's often 'just fine' to only run these commands in a single mantra.
+and then pushing everything in one go. But for smaller projects, and certainly
+for individual projects, you can just think of `add-commit-push` as a single operation.
 
 
 # Pulling changes from the remote repository

@@ -77,6 +77,8 @@ In your terminal, first just type git and hit enter, to see if you installed it 
 $ git
 ```
 
+*Note that the codeblocks in this workshop use the dollar sign to indicate that you should enter the part after the dollar sign in your terminal. So `$ git` means that you want to type `git` in your terminal. By the way, please do 'type' rather than 'copy', because this helps you remember the commands better*
+
 If this gives you an overview of important git commands, you know it's installed properly. 
 Now we can set your username and email. For this run the following two commands (don't forget
 to set your own name and email address)
@@ -98,7 +100,7 @@ $ git config --global user.email
 
 When at some point (in about 15 minutes) you're pushing your first commits to 
 GitHub, you'll naturally be required to authenticate. It used to be the case
-that you can just give your username and password, but [the times they are a changing](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/#what-you-need-to-do-today).
+that you can just give your username and password, but [the times they are a-changing](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/#what-you-need-to-do-today).
 For you now you can still do this (the dates mentioned in the link have been postponed), but you might get a warning that this is 'deprecated',
 and will no longer be possible from August 13, 2021. For more details 
 
@@ -138,11 +140,9 @@ Now that you have created the directory, you can navigate to it.
 cd github-workshop
 ```
 
-And here you can again verify that this is actually a github repository by checking the status.
+You can verify that this directory actually holds a copy of the repository by listing
+the files. On Windows the command is `$ dir`, and on Mac and Linux it's `$ ls`.
 
-```
-git status
-```
 
 So what can you do with this local repository? Well, in addition to having the files,
 you also have the complete version history, and you can revert back to previous versions.
@@ -155,7 +155,10 @@ repository whether they want to adopt your changes. So without being an official
 you can still be a nice person who helps. But more on that later when we get to `pull requests`.
 
 
-## Creating your repository via Github
+# Excercise: creating your own repository via Github
+
+*Please make sure to actually complete this exorcise, because you'll need the repository created
+here in the next steps of the workshop.*
 
 To create a new repository on GitHub, go to you profile page, and open the `Repositories` 
 tab. Here click on the bright green button that says `New`. Pick a name for your pet
@@ -173,9 +176,3 @@ forget to navigate to a directory in which you want to put it).
 git clone https://github.com/[your github profile]/[your repository].git
 ```
 
-Make sure that this worked (and let us know if it didn't), because you'll be using this
-repository for the next part of the tutorial, where you will update your local repository
-and push the changes to the remote repository.
-
-
-## 
