@@ -9,10 +9,6 @@ Preparation:
 * We assume that you have [git](https://github.com/git-guides/install-git) installed so that you can run commands in the terminal. There are graphical tools for working with git(hub), but using the command line tool helps understanding what you are doing, and will also prepare you for using git on a server without graphical interface and/or another computer without graphical tools installed.  
 * Register your own [GitHub](https://github.com/) account
 
-# Workshop
-
-More information on the [CCS Amsterdam Git(hub) Workshop](workshop.md)
-
 # Howtos
 
 Basic Git(hub) usage
